@@ -20,6 +20,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .top-container{
@@ -166,3 +167,66 @@ h5{
     font-weight: 100; 
 }
 
+.hide-dispaly{
+    position: fixed;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        display: none;
+    }
+    
+    :root {
+        --s-loader-wrapper-bg-color: rgb(21, 22, 43);
+        --s-loader-width: 20px;
+        --s-loader-height: var(--s-loader-width);
+        --s-loader-border-color-trans: rgba(140, 197, 233, 0.2);
+        --s-loader-border-color-full: rgb(29, 161, 242);
+      }
+      
+      body {
+        margin: 0;
+        background: var(--s-loader-wrapper-bg-color, rgb(144, 149, 243));
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .spinning-loader {
+        width: var(--s-loader-width);
+        height: var(--s-loader-height);
+        border: 5px solid var(--s-loader-border-color-trans);
+        border-left-color: var(--s-loader-border-color-full);
+        border-radius: 50%;
+        background: transparent;
+        animation-name: rotate-s-loader;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        position: relative;
+      }
+      
+      @keyframes rotate-s-loader {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      
+
+  }
