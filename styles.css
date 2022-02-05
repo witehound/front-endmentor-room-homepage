@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: sticky;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-container{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+}
+
+.left-top-container{
+    background-image: url("./assets/desktop-image-hero-3.jpg");
+    flex: 3;
+    background-size: cover;
+    color: white;
+}
+
+.left-top-container-wrap{
+    margin: 60px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.room-room{
+    margin-bottom: 10px;
+}
+.navigations-item{
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+}
+
+.navigations-items{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+h5{
+    font-size: 13px;
+}
+
+.right-top-container{
+    flex: 2;
+}
+
+.right-top-container-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top-container-warp-top{
+    flex: 4;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.top-header{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.right-top-container-warp-top-paragraph{
+    font-size: 17px;
+    color: hsl(0, 0%, 63%);
+    font-weight: 100;
+}
+
+.right-top-container-warp-top-control{
+    font-weight: 200;
+    font-size: 16px;
+    white-space: 2px;
+}
+
+.right-top-container-warp-bottom{
+    flex: 1;
+}
+
+.right-top-container-warp-bottom-button{
+    background-color: black;
+    color: white;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 40px;
+    font-weight: 50;
+}
+
+
+.bottom-container{
+    flex: 2;
+}
+.bottom-container-wrap{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-container-first{
+    flex: 3;
+    background-image: url("./assets/image-about-dark.jpg");
+    background-size: cover;
+}
+
+.bottom-container-second{
+    flex: 4;
+}
+
+.bottom-container-third{
+    flex: 3;
+    background-image: url("./assets/image-about-light.jpg");
+    background-size: cover;
+}
+
+.bottom-container-second-wrap{
+    padding-left: 40px;
+    padding-top: 80px;
+    padding-right: 40px;
+   
+}
+
+.bottom-container-second-header{
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.bottom-container-second-paragraph{
+    font-size: 17px;
+    color: hsl(0, 0%, 63%);
+    font-weight: 100; 
+}
+
